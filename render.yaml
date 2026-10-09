@@ -1,0 +1,7 @@
+
+services:
+  - type: web
+    name: flame26-regression-experiment
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh -c 'streamlit run app.py --server.address 0.0.0.0 --server.port $PORT'
